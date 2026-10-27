@@ -1,0 +1,29 @@
+{
+  "name": "pitwall-recorder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Records raw F1 25 UDP telemetry to .pwrec.gz files",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "record": "node src/recorder/main.ts",
+    "inspect": "node src/tools/inspect.ts",
+    "replay": "node src/tools/replay.ts",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "build": "node scripts/build.mjs",
+    "build:exe": "node scripts/build.mjs --exe",
+    "smoke": "node scripts/smoke-exe.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "esbuild": "^0.28.2",
+    "fast-check": "^4.10.2",
+    "postject": "^1.0.0-alpha.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+dist/
+pitwall-recordings/
+*.pwrec.gz
+.idea/
